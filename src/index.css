@@ -1,0 +1,56 @@
+:root {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--charcoal);
+  background: #f4f4f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  color-scheme: light;
+  --brand-black: #111111;
+  --brand-red: #c8102e;
+  --brand-on-dark: #e63946;
+  --black: #0b0d10;
+  --red: #a52b25;
+  --green: #1d6848;
+  --yellow: #ffe600;
+  --yellow-soft: #fff04a;
+  --yellow-ink: var(--black);
+  --blue: #24578a;
+  --ivory: #ffffff;
+  --charcoal: var(--brand-black);
+  --surface: #ffffff;
+  --ink: var(--charcoal);
+  --muted: #666666;
+  --border: #dddddd;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select, textarea { font: inherit; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button { color: inherit; }
+button:disabled { cursor: not-allowed; opacity: .5; }
+a { color: inherit; }
+button, input, select, textarea { outline-offset: 4px; }
+:focus-visible { outline: 3px solid var(--brand-red); }
+.sidebar :focus-visible, .page-heading :focus-visible { outline-color: var(--brand-on-dark); }
+.independent-card :focus-visible, .dorm-row :focus-visible,
+.finding-row :focus-visible { outline-color: var(--yellow-soft); }
+button svg { flex-shrink: 0; }
+button { touch-action: manipulation; }
+h1, h2, h3, h4, p { margin: 0; }
+table { border-collapse: collapse; width: 100%; }
+th { text-align: left; }
+input, select, textarea { max-width: 100%; }
+input, select, textarea { border: 1px solid var(--border); background: var(--surface); border-radius: 8px; color: var(--ink); }
+input:not([type="checkbox"]), select { min-height: 42px; padding: 9px 12px; }
+textarea { padding: 12px; resize: vertical; }
+input[type="checkbox"] { width: 17px; height: 17px; accent-color: var(--brand-red); flex: 0 0 auto; }
+input::placeholder, textarea::placeholder { color: #777777; }
+small { font-size: 11px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}

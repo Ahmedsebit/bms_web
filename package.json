@@ -1,0 +1,28 @@
+{
+  "name": "bms-security-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build.mjs --serve",
+    "build": "tsc -b && node scripts/build.mjs --production",
+    "lint": "oxlint",
+    "preview": "node scripts/build.mjs --production --serve",
+    "test:e2e": "playwright test",
+    "test:install": "node scripts/install-browsers.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.72.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.66.0-alpha-2026-11-11",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "esbuild": "^0.28.2",
+    "oxlint": "^1.90.0",
+    "typescript": "~7.0.2"
+  }
+}
